@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:background="@drawable/backitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|end"
+        android:layout_margin="5dp"
+        tools:ignore="MissingConstraints">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="80"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+        <TextView
+            android:id="@+id/artl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:text="art"/>
+
+        <TextView
+            android:id="@+id/deutchl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="2dp"
+            android:text="Показать" />
+
+        <TextView
+            android:id="@+id/russianl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:text="Показать"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical">
+
+
+            <ImageButton
+                android:id="@+id/statl"
+                android:background="@color/fon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+               android:src="@drawable/green"/>
+            <ImageButton
+                android:id="@+id/deletword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/fon"
+                android:src="@android:drawable/ic_menu_edit"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NewWordLearn" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/fon</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:buttonStyle">@style/btns</item>
+    </style>
+</resources>

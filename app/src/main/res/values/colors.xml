@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fonrezerv">#E6DABA</color>
+    <color name="green">#053A07</color>
+    <color name="btnlern">#91EEFA</color>
+    <color name="btnlern1ezerv">#E2F5F8</color>
+    <color name="btnlern2">#EA987E</color>
+    <color name="btnlern3">#D3FFA0</color>
+    <color name="btnlern4">#F1A2FF</color>
+    <color name="btnlern5">#FFEB3B</color>
+    <color name="btnlern6">#FFD9A2</color>
+
+
+
+
+    <color name="fon">#EFDDBE</color>  \\цвет фона
+
+    <color name="btnlern1">#E6D199</color> \\ цвет кнопок
+    <color name="btnlern00000001">#E6D199</color>
+
+</resources>

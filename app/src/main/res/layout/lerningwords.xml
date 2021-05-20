@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top">
+        <Button
+            android:id="@+id/gopersonaldata"
+            android:onClick="gostats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="start|center_vertical"
+            android:text=" меню"/>
+
+        <ImageButton
+            android:id="@+id/help"
+            android:onClick="showhelp"
+            android:layout_width="wrap_content"
+            android:background="@color/fon"
+            android:layout_height="match_parent"
+            android:layout_marginStart="85dp"
+            android:src="@android:drawable/ic_menu_help"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/golibrary"
+                android:layout_width="wrap_content"
+                android:onClick="gotolib"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="Архив"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/wordslist"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="79dp">
+        <Button
+            android:id="@+id/verbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Глаголы"/>
+        <Button
+            android:id="@+id/nouns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Сущ"/>
+        <Button
+            android:id="@+id/words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Другие"/>
+
+        <Button
+            android:id="@+id/addnewword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gotoaddword"
+            android:layout_margin="5dp"
+            android:text="+" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

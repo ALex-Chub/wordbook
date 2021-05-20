@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scaleType="centerCrop">
+
+
+      <EditText
+          android:id="@+id/denounchenge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:hint="noun"/>
+
+    <EditText
+        android:id="@+id/rusnounchenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="runun"/>
+
+        <EditText
+            android:id="@+id/categorychanger"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="changekat"/>
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@+id/categoryspin"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/savecheges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_save"/>
+    <ImageButton
+        android:id="@+id/deletword"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"/>
+</LinearLayout>
+
+</LinearLayout>

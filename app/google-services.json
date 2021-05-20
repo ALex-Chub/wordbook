@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "769307925194",
+    "project_id": "newwordlearn",
+    "storage_bucket": "newwordlearn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769307925194:android:414439bca2cee4043fb233",
+        "android_client_info": {
+          "package_name": "com.alexch.newwordlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769307925194-8vm5jt3ihi9hag5fshg0gcphk9n28u35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuwuQjimpIhv5iHVNWAUA6YC2DyaRefso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769307925194-8vm5jt3ihi9hag5fshg0gcphk9n28u35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

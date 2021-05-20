@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="goback"
+                android:text="Назад" />
+
+            <ImageButton
+                android:id="@+id/help"
+                android:onClick="showhelp"
+                android:layout_width="wrap_content"
+                android:background="@color/fon"
+                android:layout_height="match_parent"
+                android:layout_marginStart="55dp"
+                android:layout_gravity="end"
+                android:src="@android:drawable/ic_menu_help"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/createword"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="сохранить" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/selectorwordetyp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/selectv"
+                    android:layout_width="0dp"
+                    android:layout_weight="33"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Глагол" />
+
+                <RadioButton
+                    android:id="@+id/selectn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Существительное" />
+                <RadioButton
+                    android:id="@+id/selectw"
+                    android:layout_width="0dp"
+                    android:layout_weight="33"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Другое"/>
+
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/art"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                android:hint="Артикль"/>
+
+            <EditText
+                android:id="@+id/newdeutch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_margin="5dp"
+                android:hint="deutch" />
+
+            <EditText
+                android:id="@+id/newrus"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="rus" />
+
+            <EditText
+                android:id="@+id/artform2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Введите новую категорию" />
+
+                <ImageButton
+                    android:id="@+id/addcategory"
+                    android:layout_width="wrap_content"
+                    android:background="@color/fon"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@android:drawable/ic_menu_save"/>
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/categoryspin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:autofillHints="или выберите ранее созданную" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="104dp">
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

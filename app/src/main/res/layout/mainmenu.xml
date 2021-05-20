@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center"
+    android:scaleType="centerCrop"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/welkome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/statss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Статистика"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+        <ListView
+            android:id="@+id/statslist"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="30"/>
+        <LinearLayout
+            android:id="@+id/lerned"
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:gravity="center"
+
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:orientation="vertical"
+            android:visibility="invisible"
+           >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:text="Выучено слов:  "
+                android:textSize="30dp"
+                />
+            <TextView
+                android:id="@+id/learning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:text="0"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/traintext"
+            android:text="Тренировка"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/golearn"
+                android:onClick="golearn"
+                android:background="@drawable/leftbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Лёгкий"/>
+<Button
+    android:id="@+id/gohardtrain"
+    android:onClick="gohard"
+    android:layout_width="0dp"
+    android:background="@drawable/rightbtn"
+    android:layout_height="wrap_content"
+    android:layout_weight="50"
+    android:text="Трудный"/>
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/golib"
+            android:onClick="golib"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Архив слов"
+            style="@style/btns" />
+
+        <Button
+            android:id="@+id/add"
+            android:onClick="goadd"
+            android:background="@drawable/btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить слово"/>
+
+        <Button
+            android:id="@+id/exit"
+            android:background="@drawable/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="выйти из аккаунта"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
